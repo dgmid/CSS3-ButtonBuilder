@@ -327,6 +327,7 @@
 				CODE_SIGN_IDENTITY = "Self-signed Applicationa";
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = "";
+				ENABLE_TESTABILITY = NO;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CSS3 ButtonBuilder/CSS3 ButtonBuilder-Prefix.pch";
 				INFOPLIST_FILE = "CSS3 ButtonBuilder/CSS3 ButtonBuilder-Info.plist";
