@@ -1,0 +1,386 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AE9745801EC1D35C004E779C /* CSS3-ButtonBuilder in Resources */ = {isa = PBXBuildFile; fileRef = AE97457F1EC1D35C004E779C /* CSS3-ButtonBuilder */; };
+		AEA513F71698CBDD000FD564 /* CSS3 ButtonBuilder.iconset in Resources */ = {isa = PBXBuildFile; fileRef = AEA513F61698CBDD000FD564 /* CSS3 ButtonBuilder.iconset */; };
+		AEFD7B9716205D410059CFE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFD7B9616205D410059CFE7 /* Cocoa.framework */; };
+		AEFD7BA116205D410059CFE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = AEFD7B9F16205D410059CFE7 /* InfoPlist.strings */; };
+		AEFD7BA316205D410059CFE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFD7BA216205D410059CFE7 /* main.m */; };
+		AEFD7BAA16205D410059CFE7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AEFD7BA916205D410059CFE7 /* AppDelegate.m */; };
+		AEFD7BAD16205D420059CFE7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = AEFD7BAB16205D420059CFE7 /* MainMenu.xib */; };
+		AEFD7BCD16205D620059CFE7 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEFD7BCC16205D620059CFE7 /* WebKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		AE97457F1EC1D35C004E779C /* CSS3-ButtonBuilder */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "CSS3-ButtonBuilder"; sourceTree = "<group>"; };
+		AEA513F61698CBDD000FD564 /* CSS3 ButtonBuilder.iconset */ = {isa = PBXFileReference; lastKnownFileType = folder.iconset; path = "CSS3 ButtonBuilder.iconset"; sourceTree = "<group>"; };
+		AEFD7B9216205D410059CFE7 /* CSS3 ButtonBuilder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "CSS3 ButtonBuilder.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AEFD7B9616205D410059CFE7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		AEFD7B9916205D410059CFE7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		AEFD7B9A16205D410059CFE7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		AEFD7B9B16205D410059CFE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		AEFD7B9E16205D410059CFE7 /* CSS3 ButtonBuilder-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CSS3 ButtonBuilder-Info.plist"; sourceTree = "<group>"; };
+		AEFD7BA016205D410059CFE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AEFD7BA216205D410059CFE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AEFD7BA416205D410059CFE7 /* CSS3 ButtonBuilder-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CSS3 ButtonBuilder-Prefix.pch"; sourceTree = "<group>"; };
+		AEFD7BA816205D410059CFE7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AEFD7BA916205D410059CFE7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AEFD7BAC16205D420059CFE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		AEFD7BB416205D420059CFE7 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		AEFD7BBB16205D420059CFE7 /* CSS3 ButtonBuilderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CSS3 ButtonBuilderTests-Info.plist"; sourceTree = "<group>"; };
+		AEFD7BBD16205D420059CFE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		AEFD7BBF16205D420059CFE7 /* CSS3_ButtonBuilderTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CSS3_ButtonBuilderTests.h; sourceTree = "<group>"; };
+		AEFD7BC016205D420059CFE7 /* CSS3_ButtonBuilderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CSS3_ButtonBuilderTests.m; sourceTree = "<group>"; };
+		AEFD7BCC16205D620059CFE7 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AEFD7B8F16205D410059CFE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFD7BCD16205D620059CFE7 /* WebKit.framework in Frameworks */,
+				AEFD7B9716205D410059CFE7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AEFD7B8716205D410059CFE7 = {
+			isa = PBXGroup;
+			children = (
+				AEA513F61698CBDD000FD564 /* CSS3 ButtonBuilder.iconset */,
+				AEFD7BCC16205D620059CFE7 /* WebKit.framework */,
+				AEFD7B9C16205D410059CFE7 /* CSS3 ButtonBuilder */,
+				AEFD7BB916205D420059CFE7 /* CSS3 ButtonBuilderTests */,
+				AEFD7B9516205D410059CFE7 /* Frameworks */,
+				AEFD7B9316205D410059CFE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AEFD7B9316205D410059CFE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AEFD7B9216205D410059CFE7 /* CSS3 ButtonBuilder.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AEFD7B9516205D410059CFE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEFD7B9616205D410059CFE7 /* Cocoa.framework */,
+				AEFD7BB416205D420059CFE7 /* SenTestingKit.framework */,
+				AEFD7B9816205D410059CFE7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		AEFD7B9816205D410059CFE7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AEFD7B9916205D410059CFE7 /* AppKit.framework */,
+				AEFD7B9A16205D410059CFE7 /* CoreData.framework */,
+				AEFD7B9B16205D410059CFE7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		AEFD7B9C16205D410059CFE7 /* CSS3 ButtonBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				AE97457F1EC1D35C004E779C /* CSS3-ButtonBuilder */,
+				AEFD7BA816205D410059CFE7 /* AppDelegate.h */,
+				AEFD7BA916205D410059CFE7 /* AppDelegate.m */,
+				AEFD7BAB16205D420059CFE7 /* MainMenu.xib */,
+				AEFD7B9D16205D410059CFE7 /* Supporting Files */,
+			);
+			path = "CSS3 ButtonBuilder";
+			sourceTree = "<group>";
+		};
+		AEFD7B9D16205D410059CFE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEFD7B9E16205D410059CFE7 /* CSS3 ButtonBuilder-Info.plist */,
+				AEFD7B9F16205D410059CFE7 /* InfoPlist.strings */,
+				AEFD7BA216205D410059CFE7 /* main.m */,
+				AEFD7BA416205D410059CFE7 /* CSS3 ButtonBuilder-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AEFD7BB916205D420059CFE7 /* CSS3 ButtonBuilderTests */ = {
+			isa = PBXGroup;
+			children = (
+				AEFD7BBF16205D420059CFE7 /* CSS3_ButtonBuilderTests.h */,
+				AEFD7BC016205D420059CFE7 /* CSS3_ButtonBuilderTests.m */,
+				AEFD7BBA16205D420059CFE7 /* Supporting Files */,
+			);
+			path = "CSS3 ButtonBuilderTests";
+			sourceTree = "<group>";
+		};
+		AEFD7BBA16205D420059CFE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AEFD7BBB16205D420059CFE7 /* CSS3 ButtonBuilderTests-Info.plist */,
+				AEFD7BBC16205D420059CFE7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AEFD7B9116205D410059CFE7 /* CSS3 ButtonBuilder */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AEFD7BC416205D420059CFE7 /* Build configuration list for PBXNativeTarget "CSS3 ButtonBuilder" */;
+			buildPhases = (
+				AEFD7B8E16205D410059CFE7 /* Sources */,
+				AEFD7B8F16205D410059CFE7 /* Frameworks */,
+				AEFD7B9016205D410059CFE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CSS3 ButtonBuilder";
+			productName = "CSS3 ButtonBuilder";
+			productReference = AEFD7B9216205D410059CFE7 /* CSS3 ButtonBuilder.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AEFD7B8916205D410059CFE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "Midwinter Duncan Grant";
+				TargetAttributes = {
+					AEFD7B9116205D410059CFE7 = {
+						ProvisioningStyle = Manual;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = AEFD7B8C16205D410059CFE7 /* Build configuration list for PBXProject "CSS3 ButtonBuilder" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = AEFD7B8716205D410059CFE7;
+			productRefGroup = AEFD7B9316205D410059CFE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AEFD7B9116205D410059CFE7 /* CSS3 ButtonBuilder */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AEFD7B9016205D410059CFE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFD7BA116205D410059CFE7 /* InfoPlist.strings in Resources */,
+				AEFD7BAD16205D420059CFE7 /* MainMenu.xib in Resources */,
+				AE9745801EC1D35C004E779C /* CSS3-ButtonBuilder in Resources */,
+				AEA513F71698CBDD000FD564 /* CSS3 ButtonBuilder.iconset in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AEFD7B8E16205D410059CFE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AEFD7BA316205D410059CFE7 /* main.m in Sources */,
+				AEFD7BAA16205D410059CFE7 /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		AEFD7B9F16205D410059CFE7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEFD7BA016205D410059CFE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		AEFD7BAB16205D420059CFE7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEFD7BAC16205D420059CFE7 /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		AEFD7BBC16205D420059CFE7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AEFD7BBD16205D420059CFE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AEFD7BC216205D420059CFE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		AEFD7BC316205D420059CFE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "";
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		AEFD7BC516205D420059CFE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Self-signed Applicationa";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSS3 ButtonBuilder/CSS3 ButtonBuilder-Prefix.pch";
+				INFOPLIST_FILE = "CSS3 ButtonBuilder/CSS3 ButtonBuilder-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midwinter-dg.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		AEFD7BC616205D420059CFE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "Self-signed Applicationa";
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "CSS3 ButtonBuilder/CSS3 ButtonBuilder-Prefix.pch";
+				INFOPLIST_FILE = "CSS3 ButtonBuilder/CSS3 ButtonBuilder-Info.plist";
+				MACOSX_DEPLOYMENT_TARGET = 10.7;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.midwinter-dg.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SDKROOT = macosx;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AEFD7B8C16205D410059CFE7 /* Build configuration list for PBXProject "CSS3 ButtonBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEFD7BC216205D420059CFE7 /* Debug */,
+				AEFD7BC316205D420059CFE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AEFD7BC416205D420059CFE7 /* Build configuration list for PBXNativeTarget "CSS3 ButtonBuilder" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AEFD7BC516205D420059CFE7 /* Debug */,
+				AEFD7BC616205D420059CFE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = AEFD7B8916205D410059CFE7 /* Project object */;
+}

@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<!--
+Copyright (C) 2012 Midwinter Duncan Grant http://www.midwinter-dg.com/
+Copyright (C) 2012 Duncan Midwinter
+
+CSS3 ButtonBuilder makes use of the following resources:
+jQuery					http://jquery.com
+jQueryUI				http://jqueryui.com
+jQuery-gradient-picker	https://github.com/tantaman/jquery-gradient-picker
+jQuery color picker		http://www.eyecon.ro/colorpicker/
+jQuery AlphaNumeric		http://www.shiguenori.com/material/alphanumeric/index.html
+-->
+<title>CSS3 ButtonBuilder v1.0</title>
+<link rel="stylesheet" href="css/styles.css" />
+	<link rel="stylesheet" href="plugins/jqPlugins/colorpicker/css/colorpicker.css" />
+<script src="js/set-presets.js"></script>
+</head>
+
+<body>
+	
+	<div id="preview-wrap">
+	<div id="preview">
+		
+		<button type="button" id="button"><span id="button-text" contenteditable="true"></span></button>
+		
+	<!--end preview--></div>
+	<!--end preview-wrap--></div>
+	
+	<div id="preview-well">
+		<input type="button" id="preview-color" class="swatch" data-property="background-color" />
+	</div>
+
+	<div id="dimensions-controls">
+		<input id="button-width" type="range" min="1" max="520" />
+		<input id="button-width-val" class="numeric" type="number" min="1" max="520" />
+		<input id="button-height" type="range" min="1" max="150" />
+		<input id="button-height-val" class="numeric" type="number" min="1" max="150" />
+	<!--end dimensions--></div>
+	
+	<div id="background-solid-controls">
+		<input type="radio" id="background-type-solid" name="background-type" value="0" class="activate" />
+		<input id="solid-color-r" class="numeric" type="number" min="0" max="255" />
+		<input id="solid-color-g" class="numeric" type="number" min="0" max="255" />
+		<input id="solid-color-b" class="numeric" type="number" min="0" max="255" />
+		<input id="solid-color-o" class="numeric" type="number" min="0" max="100" />
+		<input type="button" id="solid-color" class="swatch" data-property="background-image" />
+	<!--end background-solid-controls--></div>
+	
+	<div id="background-controls">
+		<input type="radio" id="background-type-gradient" name="background-type" value="1" class="activate" />
+		<input id="bg-direction-0" type="radio" name="bg-direction" value="0" />
+		<input id="bg-direction-1" type="radio" name="bg-direction" value="1" />
+		<input id="bg-direction-2" type="radio" name="bg-direction" value="2" />
+		<input id="bg-direction-3" type="radio" name="bg-direction" value="3" />
+		<input id="bg-direction-4" type="radio" name="bg-direction" value="4" />
+		<div id="grad-wrap">
+		<div class="grad_ex" id="gradient-picker"></div>
+		</div>
+	<!--end background-controls--></div>
+	
+	<div id="border-attr-controls">
+		<input type="checkbox" id="border-activate" class="activate" />
+		<input id="button-border" type="range" min="0" max="20" />
+		<input id="button-border-val" class="numeric" type="number" min="0" max="20" />
+		<input id="border-color-r" class="numeric" type="number" min="0" max="255" />
+		<input id="border-color-g" class="numeric" type="number" min="0" max="255" />
+		<input id="border-color-b" class="numeric" type="number" min="0" max="255" />
+		<input id="border-color-o" class="numeric" type="number" min="0" max="100" />
+		<input type="button" id="border-color" class="swatch" data-property="border-color" />
+	<!--end border-attr-controls--></div>
+	
+	<div id="border-radius-controls">
+		<input type="checkbox" id="radius-activate" class="activate" />	
+		<input type="checkbox" id="border-sync" />
+		<input id="radius-top-left" type="range" min="0" max="150" />
+		<input id="radius-top-left-val" class="numeric" type="number" min="0" max="150" />
+		<input id="radius-top-right" type="range" min="0" max="150" />
+		<input id="radius-top-right-val" class="numeric" type="number" min="0" max="150" />
+		<input id="radius-bottom-right" type="range" min="0" max="150" />
+		<input id="radius-bottom-right-val" class="numeric" type="number" min="0" max="150" />
+		<input id="radius-bottom-left" type="range" min="0" max="150" />
+		<input id="radius-bottom-left-val" class="numeric" type="number" min="0" max="150" />
+	<!--end border-radius-controls--></div>
+	
+	<div id="shadow-in-controls">
+		<input type="checkbox" id="shadow-in-activate" class="activate" />
+		<input id="shadow-in-x" type="range" min="-100" max="100" />
+		<input id="shadow-in-x-val" class="numeric" type="number" min="-100" max="100" />
+		<input id="shadow-in-y" type="range" min="-100" max="100" />
+		<input id="shadow-in-y-val" class="numeric" type="number" min="-100" max="100" />
+		<input id="shadow-in-blur" type="range" min="0" max="100" />
+		<input id="shadow-in-blur-val" class="numeric" type="number" min="0" max="100" />
+		<input id="shadow-in-spread" type="range" min="-50" max="50" />
+		<input id="shadow-in-spread-val" class="numeric" type="number" min="-50" max="50" />
+		<input id="shadow-in-r" class="numeric" type="number" min="0" max="255" />
+		<input id="shadow-in-g" class="numeric" type="number" min="0" max="255" />
+		<input id="shadow-in-b" class="numeric" type="number" min="0" max="255" />
+		<input id="shadow-in-o" class="numeric" type="number" min="0" max="100" />		
+		<input type="button" id="shadow-in" class="swatch" data-property="-webkit-box-shadow" />		
+	<!--end shadow-in-controls--></div>
+	
+	<div id="shadow-out-controls">
+		<input type="checkbox" id="shadow-out-activate" class="activate" />
+		<input id="shadow-out-x" type="range" min="-100" max="100" />
+		<input id="shadow-out-x-val" class="numeric" type="number" min="-100" max="100" />
+		<input id="shadow-out-y" type="range" min="-100" max="100" />
+		<input id="shadow-out-y-val" class="numeric" type="number" min="-100" max="100" />
+		<input id="shadow-out-blur" type="range" min="0" max="100" />
+		<input id="shadow-out-blur-val" class="numeric" type="number" min="0" max="100" />
+		<input id="shadow-out-spread" type="range" min="-50" max="50" />
+		<input id="shadow-out-spread-val" class="numeric" type="number" min="-50" max="50" />
+		<input id="shadow-out-r" class="numeric" type="number" min="0" max="255" />
+		<input id="shadow-out-g" class="numeric" type="number" min="0" max="255" />
+		<input id="shadow-out-b" class="numeric" type="number" min="0" max="255" />
+		<input id="shadow-out-o" class="numeric" type="number" min="0" max="100" />
+		<input type="button" id="shadow-out" class="swatch" data-property="-webkit-box-shadow" />
+	<!--end shadow-out-controls--></div>
+	
+	<div id="text-attr-controls">
+		<select id="text-font">	
+			<option value="Andale Mono">Andale Mono</option>
+			<option value="Arial">Arial</option>
+			<option value="Arial Black">Arial Black</option>
+			<option value="Courier New">Courier New</option>
+			<option value="Georgia">Georgia</option>
+			<option value="Helvetica">Helvetica</option>
+			<option value="Impact">Impact</option>
+			<option value="Lucida Grande">Lucida Grande</option>
+			<option value="Tahoma">Tahoma</option>
+			<option value="Times New Roman">Times New Roman</option>
+			<option value="Trebuchet MS">Trebuchet MS</option>
+			<option value="Verdana">Verdana</option>	
+		</select>		
+		<select id="text-style">
+			<option value="0">Normal</option>
+			<option value="1">Bold</option>
+			<option value="2">Italic</option>
+			<option value="3">Bold Italic</option>
+		</select>
+		<input id="text-size" type="range" min="8" max="72" />
+		<input id="text-size-val" class="numeric" type="number" min="8" max="72" />
+		<input id="text-r" class="numeric" type="number" min="0" max="255" />
+		<input id="text-g" class="numeric" type="number" min="0" max="255" />
+		<input id="text-b" class="numeric" type="number" min="0" max="255" />
+		<input id="text-o" class="numeric" type="number" min="0" max="100" />
+		<input type="button" id="text" class="swatch" data-property="color" />
+	<!--end text-attr-controls--></div>
+	
+	<div id="text-shadow-controls">
+		<input type="checkbox" id="shadow-text-activate" class="activate" />
+		<input id="shadow-text-x" type="range" min="-20" max="20" />
+		<input id="shadow-text-x-val" class="numeric" type="number" min="-20" max="20" />
+		<input id="shadow-text-y" type="range" min="-20" max="20" />
+		<input id="shadow-text-y-val" class="numeric" type="number" min="-20" max="20" />
+		<input id="shadow-text-blur" type="range" min="0" max="20" />
+		<input id="shadow-text-blur-val" class="numeric" type="number" min="0" max="20" />
+		<input id="shadow-text-r" class="numeric" type="number" min="0" max="255" />
+		<input id="shadow-text-g" class="numeric" type="number" min="0" max="255" />
+		<input id="shadow-text-b" class="numeric" type="number" min="0" max="255" />
+		<input id="shadow-text-o" class="numeric" type="number" min="0" max="100" />
+		<input type="button" id="shadow-text" class="swatch" data-property="text-shadow" />
+	<!--end text-shadow-controls--></div>
+	
+	<div id="actions">
+		<button type="button" id="save">Save</button>
+		<button type="button" id="load">Load</button>
+		<button type="button" id="prefs" title="preferences">Preferences</button>
+		<button type="button" id="reset" title="reset">Reset</button>		
+		<button type="button" id="css">Generate CSS / HTML</button>
+	<!--end actions--></div>
+	
+	<div class="picker-1">		
+		<div>
+			<div id="preset-black-1"></div>
+			<div id="preset-white-1"></div>
+			<div id="preset-grey-1"></div>
+			<div id="preset-transparent-1"></div>
+			<input id="picker-1-red" type="range" min="0" max="255" value="0" />
+			<input id="picker-1-green" type="range" min="0" max="255" value="0" />
+			<input id="picker-1-blue" type="range" min="0" max="255" value="0" />
+			<input id="picker-1-opacity" type="range" min="0" max="100" value="100" />
+			<input type="checkbox" id="rgb-lock-1" />
+		</div>
+	<!--end picker-1--></div>
+	
+	<div class="picker-2">		
+		<div>
+			<div id="preset-black-2"></div>
+			<div id="preset-white-2"></div>
+			<div id="preset-grey-2"></div>
+			<div id="preset-transparent-2"></div>
+			<input id="picker-2-red" type="range" min="0" max="255" value="0" />
+			<input id="picker-2-green" type="range" min="0" max="255" value="0" />
+			<input id="picker-2-blue" type="range" min="0" max="255" value="0" />
+			<input id="picker-2-opacity" type="range" min="0" max="100" value="100" />
+			<input type="checkbox" id="rgb-lock-2" />
+		</div>
+	<!--end picker-2--></div>
+	
+	<div class="picker-3">		
+		<div>
+			<div id="preset-black-3"></div>
+			<div id="preset-white-3"></div>
+			<div id="preset-grey-3"></div>
+			<div id="preset-transparent-3"></div>
+			<input id="picker-3-red" type="range" min="0" max="255" value="0" />
+			<input id="picker-3-green" type="range" min="0" max="255" value="0" />
+			<input id="picker-3-blue" type="range" min="0" max="255" value="0" />
+			<input id="picker-3-opacity" type="range" min="0" max="100" value="100" />
+			<input type="checkbox" id="rgb-lock-3" />
+		</div>
+	<!--end picker-3--></div>
+	
+	<div class="picker-4">		
+		<div>
+			<div id="preset-black-4"></div>
+			<div id="preset-white-4"></div>
+			<div id="preset-grey-4"></div>
+			<div id="preset-transparent-4"></div>
+			<input id="picker-4-red" type="range" min="0" max="255" value="0" />
+			<input id="picker-4-green" type="range" min="0" max="255" value="0" />
+			<input id="picker-4-blue" type="range" min="0" max="255" value="0" />
+			<input id="picker-4-opacity" type="range" min="0" max="100" value="100" />
+			<input type="checkbox" id="rgb-lock-4" />
+		</div>
+	<!--end picker-4--></div>
+	
+	<div class="picker-5">		
+		<div>
+			<div id="preset-black-5"></div>
+			<div id="preset-white-5"></div>
+			<div id="preset-grey-5"></div>
+			<div id="preset-transparent-5"></div>
+			<input id="picker-5-red" type="range" min="0" max="255" value="0" />
+			<input id="picker-5-green" type="range" min="0" max="255" value="0" />
+			<input id="picker-5-blue" type="range" min="0" max="255" value="0" />
+			<input id="picker-5-opacity" type="range" min="0" max="100" value="100" />
+			<input type="checkbox" id="rgb-lock-5" />
+		</div>
+	<!--end picker-5--></div>
+	
+	<div class="picker-6">		
+		<div>
+			<div id="preset-black"></div>
+			<div id="preset-white"></div>
+			<div id="preset-grey"></div>
+			<div id="preset-transparent"></div>
+			<input id="picker-6-red" type="range" min="0" max="255" value="0" />
+			<input id="picker-6-green" type="range" min="0" max="255" value="0" />
+			<input id="picker-6-blue" type="range" min="0" max="255" value="0" />
+			<input id="picker-6-opacity" type="range" min="0" max="100" value="100" />
+			<input id="preview-color-r" class="numeric" type="number" min="0" max="255" />
+			<input id="preview-color-g" class="numeric" type="number" min="0" max="255" />
+			<input id="preview-color-b" class="numeric" type="number" min="0" max="255" />
+			<input id="preview-color-o" class="numeric" type="number" min="0" max="100" />
+			<input type="checkbox" id="rgb-lock-6" />
+		</div>
+	<!--end picker-5--></div>
+	
+	<div class="picker-7">		
+		<div>
+			<div id="preset-black-7"></div>
+			<div id="preset-white-7"></div>
+			<div id="preset-grey-7"></div>
+			<div id="preset-transparent-7"></div>
+			<input id="picker-7-red" type="range" min="0" max="255" value="0" />
+			<input id="picker-7-green" type="range" min="0" max="255" value="0" />
+			<input id="picker-7-blue" type="range" min="0" max="255" value="0" />
+			<input id="picker-7-opacity" type="range" min="0" max="100" value="100" />
+			<input type="checkbox" id="rgb-lock-7" />
+		</div>
+	<!--end picker-7--></div>
+	
+<script src="plugins/jquery-1.7.js"></script>
+<script src="plugins/jqueryUI-custom.js"></script>
+<script src="plugins/jqPlugins/colorpicker/js/colorpicker.js"></script>
+<script src="plugins/jquery.gradientPicker.js"></script>
+<script src="plugins/jquery.alphanumeric.js"></script>
+<script src="js/generate.js"></script>
+<script src="js/overlays.js"></script>
+
+</body>
+</html>
